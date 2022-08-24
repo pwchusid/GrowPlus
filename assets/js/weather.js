@@ -130,7 +130,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
     if(code == 1000) { 
       /*Set the background image to 
       clear if the weather is clear*/
-      app.style.backgroundImage = `url(./images/${timeOfDay}/clear.jpg)`;
+      app.style.backgroundImage = `url(/assets/img/weather-images/${timeOfDay}/clear.jpg)`;
       /*Change the button bg color 
       depending on if its day or night*/
       btn.style.background = "#e5ba92";
@@ -152,7 +152,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
       code == 1279 ||
       code == 1282
     ) {
-      app.style.backgroundImage = `url(./images/${timeOfDay}/cloudy.jpg)`;
+      app.style.backgroundImage = `url(/assets/img/weather-images/${timeOfDay}/cloudy.jpg)`;
       btn.style.background = "#fa6d1b";
       if(timeOfDay == "night") {
         btn.style.background = "#181e27";
@@ -178,14 +178,14 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
       code == 1249 ||
       code == 1252 
     ) {
-      app.style.backgroundImage = `url(./images/${timeOfDay}/rainy.jpg)`;
+      app.style.backgroundImage = `url(/assets/img/weather-images/${timeOfDay}/rainy.jpg)`;
       btn.style.background = "#647d75";
       if(timeOfDay == "night") {
         btn.style.background = "#325c80";
       }
     /*And finnaly...Snow*/
     } else {
-      app.style.backgroundImage = `url(./images/${timeOfDay}/snowy.jpg)`;
+      app.style.backgroundImage = `url(/assets/img/weather-images/${timeOfDay}/snowy.jpg)`;
       btn.style.background = "#4d72aa";
       if(timeOfDay == "night") {
         btn.style.background = "#1b1b1b";
