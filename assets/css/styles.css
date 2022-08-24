@@ -402,6 +402,14 @@ the website, in dark theme
   column-gap: .5rem;
 }
 
+.button__form {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  max-width: 11rem;
+  border: none;
+}
+
 .button--link{
   color: var(--first-color);
   font-weight: var(--font-medium);
