@@ -379,17 +379,18 @@ the website, in dark theme
   color: white;
 }
 
-/* =============Potential Background Blur==============
+ /* =============Potential Background Blur============== */
 .weather-app .container {
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(110, 110, 110, 0.25);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1;
   padding: 0.5rem;
+  margin-bottom: 1rem;
 }
-*/
+
 
 .weather-app .brand, .temp, .name {
   color: white;
