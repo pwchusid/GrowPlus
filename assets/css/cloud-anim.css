@@ -1,0 +1,35 @@
+.cloud__anim .container{
+    background-image: url('/assets/img/cloud-anim/forestBG.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    z-index: -1;
+}
+.cloud__anim .container h2{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+    color: white;
+}
+.cloud{
+    overflow: hidden;
+}
+.cloud img{
+    animation: cld calc(8s * var(--i)) linear infinite;
+    opacity: .6;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+@keyframes cld{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
