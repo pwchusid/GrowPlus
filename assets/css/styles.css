@@ -368,7 +368,7 @@ the website, in dark theme
 
 /*================= WEATHER APP ====================*/
 .weather-app {
-  background-image: url(/assets/img/weather-images/day/cloudy.jpg);
+  background-image: url(assets/img/weather-images/day/cloudy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border: 4px solid var(--first-color);
