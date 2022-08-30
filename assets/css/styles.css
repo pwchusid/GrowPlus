@@ -17,6 +17,7 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
+  --link-color: hsl(var(--hue), 24%, 95%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -789,6 +790,27 @@ the website, in dark theme
 
 .accordion-open .questions__icon{
   transform: rotate(45deg);
+}
+
+.questions__who {
+  display: flex;
+  line-height: 2.3rem;
+  gap: 5rem;
+  scroll-behavior: smooth;
+  
+
+  margin-left: 3rem;
+  padding-bottom: 3rem;
+}
+
+.questions__who a {
+  color: var(--first-color-lighten);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.questions__who a:hover {
+  text-decoration: underline;
 }
 
 /*=============== CONTACT ===============*/
