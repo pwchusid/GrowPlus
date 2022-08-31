@@ -101,7 +101,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
     appealing and add it to the page*/
     /*Original format: 2021-10-09 17:53*/
     /*New Format: 17:53 - Friday 9, 10 2021*/
-    dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}, ${m} ${y}`;
+    dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d} - ${m} - ${y}`;
     timeOutput.innerHTML = time;
     /*Add the name of the city into the page*/
     nameOutput.innerHTML = data.location.name;
