@@ -34,7 +34,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
+  /*========== Margins Bottom ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
@@ -1037,10 +1037,19 @@ the website, in dark theme
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 414px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .home__data {
+    max-width: 20rem;
+  }
+
+  .weather-app {
+    max-width: 19rem;
+    padding: 3rem 1rem;
   }
 
   .home__img{
@@ -1060,6 +1069,12 @@ the website, in dark theme
   .product__container{
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .home__data {
+    max-width: 15rem;
   }
 }
 
