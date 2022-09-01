@@ -1039,6 +1039,13 @@ the website, in dark theme
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+
+@media screen and (max-width: 280px){
+  .weather-app {
+    max-width: 89%;
+    right: 1.8rem;
+  }
+}
 @media screen and (max-width: 414px){
   .container{
     margin-left: var(--mb-1);
@@ -1047,9 +1054,7 @@ the website, in dark theme
  
   .weather-app {
     position: relative;
-    right:3%;
-    max-width: 19rem;
-    padding: 3rem 1rem;
+    margin: 0 auto;
   }
 
   .home__data {
@@ -1073,6 +1078,10 @@ the website, in dark theme
   .product__container{
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+
+  .home__data {
+    max-width: 18rem;
   }
 }
 
