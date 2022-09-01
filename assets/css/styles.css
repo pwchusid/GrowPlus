@@ -544,6 +544,8 @@ the website, in dark theme
 .about__img{
   width: 280px;
   justify-self: center;
+  border-radius: 15px;
+  margin: 5rem;
 }
 
 .about__title{
