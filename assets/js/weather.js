@@ -23,8 +23,7 @@ cities.forEach((city) => {
     //Change from default city to the clicked one
     cityInput = e.target.innerHTML;
     /*Function that fetches and displays
-    all the data from the Weather API 
-    (We will write it soon) */
+    all the data from the Weather API */
     fetchWeatherData();
     //Fade out the app (simple animation)
     app.style.opacity = "0";
@@ -42,8 +41,7 @@ form.addEventListener('submit', (e) => {
     one written in the input field*/
     cityInput = search.value;
     /*Function that fetches and displays
-    all the data from the Weather API 
-    (We will write it soon)*/
+    all the data from the Weather API*/
     fetchWeatherData();
     //Remove all text from the input field
     search.value = "";
@@ -56,8 +54,7 @@ form.addEventListener('submit', (e) => {
 });
 
 /*Function that returns a day of the week 
-(Monday, Tuesday, Friday...) from a date (12 03 2021)
-We will use this function later*/
+(Monday, Tuesday, Friday...) from a date (12 03 2021)*/
 function dayOfTheWeek(day, month, year) {
   const weekday = [
     "Sunday", 
@@ -81,12 +78,12 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
   and convert it to a regular JS object*/
   .then(response => response.json())
   .then(data => {
-    /*You can console log the data to see what is available*/
+    /*console log the data to see what is available*/
     console.log(data);
     
-    /*Let's start by adding the temperature 
+    /*adding the temperature 
     and weather condition to the page*/
-    temp.innerHTML = data.current.temp_c + "&#176;";
+    temp.innerHTML = data.current.temp_f + "&#176;";
     conditionOutput.innerHTML = data.current.condition.text;
     
     /* Get the date and time from the city and extract 
@@ -108,7 +105,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
     /*Get the corresponding icon url for 
     the weather and extract a part of it*/
     const iconId = data.current.condition.icon.substr("//cdn.weatherapi.com/weather/64x64/".length);
-    /*Reformat the icon url to your own 
+    /*Reformat the icon url to own 
     local folder path and add it to the page*/
     icon.src = "./icons/" + iconId;
     
@@ -138,7 +135,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
         btn.style.background = "#181e27";
       }
     }
-    /*Same thing for cloudy weather*/
+    /*cloudy weather*/
     else if (
       code == 1003 ||
       code == 1006 ||
@@ -183,7 +180,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e0c1a083d9094ababd02118482
       if(timeOfDay == "night") {
         btn.style.background = "#325c80";
       }
-    /*And finnaly...Snow*/
+    /*Snow*/
     } else {
       app.style.backgroundImage = `url(assets/img/weather-images/${timeOfDay}/snowy.jpg)`;
       btn.style.background = "#4d72aa";
