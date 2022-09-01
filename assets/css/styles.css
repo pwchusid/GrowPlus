@@ -1044,7 +1044,7 @@ the website, in dark theme
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-
+ 
   .weather-app {
     position: relative;
     right:3%;
@@ -1083,6 +1083,13 @@ the website, in dark theme
 }
 
 /* For medium devices */
+@media screen and (max-width: 767px) {
+  .home__data {
+    position: relative;
+    margin-right: 50px;
+  }
+}
+
 @media screen and (min-width: 576px){
   .steps__container{
     grid-template-columns: repeat(2, 1fr);
