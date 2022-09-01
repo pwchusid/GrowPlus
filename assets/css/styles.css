@@ -1045,13 +1045,15 @@ the website, in dark theme
     margin-right: var(--mb-1);
   }
 
-  .home__data {
-    max-width: 20rem;
-  }
-
   .weather-app {
+    position: relative;
+    right:3%;
     max-width: 19rem;
     padding: 3rem 1rem;
+  }
+
+  .home__data {
+    max-width: 20rem;
   }
 
   .home__img{
