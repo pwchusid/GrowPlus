@@ -1,4 +1,3 @@
-//Get all necessary elements from the DOM
 const app = document.querySelector('.weather-app');
 const temp = document.querySelector('.temp');
 const dateOutput = document.querySelector('.date');
@@ -15,7 +14,7 @@ const btn = document.querySelector('.submit');
 const cities = document.querySelectorAll('.city');
 
 //Default city when the page loads
-let cityInput = "Vermont";
+let cityInput = "Cupertino";
 
 //Add click event to each city in the panel
 cities.forEach((city) => {
